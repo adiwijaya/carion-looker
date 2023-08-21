@@ -3,17 +3,36 @@ view: facts_bikesharing {
   sql_table_name: dwh_bikesharing.facts_trips_daily_partition ;;
   #
   # # Define your dimensions and measures here, like this:
+  dimension: trip_date {
+    description: "trip_date"
+    type: date_time
+    sql: ${TABLE}.trip_date ;;
+  }
+
   dimension: start_station_id {
     description: "start_station_id"
     type: number
     sql: ${TABLE}.start_station_id ;;
   }
   #
+  dimension: total_trips {
+    description: "total_trips"
+    type: number
+    sql: ${TABLE}.total_trips ;;
+  }
+
   dimension: sum_duration_sec {
     description: "sum_duration_sec"
     type: number
     sql: ${TABLE}.sum_duration_sec ;;
   }
+
+  dimension: avg_duration_sec {
+    description: "avg_duration_sec"
+    type: number
+    sql: ${TABLE}.avg_duration_sec ;;
+  }
+
   #
   # dimension_group: most_recent_purchase {
   #   description: "The date when each user last ordered"
