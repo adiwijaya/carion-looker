@@ -5,7 +5,7 @@ view: facts_bikesharing {
   # # Define your dimensions and measures here, like this:
   dimension: trip_date {
     description: "trip_date"
-    type: date_time
+    type: date
     sql: ${TABLE}.trip_date ;;
   }
 
