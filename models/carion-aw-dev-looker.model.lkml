@@ -22,6 +22,7 @@ persist_with: carion-aw-dev-looker_default_datagroup
 explore: facts_bikesharing {
   access_filter: {
     field: start_station_id
+    # user_attribute: carion_merchant_category
     user_attribute: id
   }
 }
