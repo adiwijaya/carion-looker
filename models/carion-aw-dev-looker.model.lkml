@@ -19,6 +19,8 @@ persist_with: carion-aw-dev-looker_default_datagroup
 # fields available to users for data analysis.
 # Explores should be purpose-built for specific use cases.
 
+explore: facts_bikesharing {}
+
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Carion-aw-dev-looker"
 
 # To create more sophisticated Explores that involve multiple views, you can use the join parameter.
