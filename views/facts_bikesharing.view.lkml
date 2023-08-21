@@ -11,7 +11,7 @@ view: facts_bikesharing {
 
   dimension: start_station_id {
     description: "start_station_id"
-    type: number
+    type: string
     sql: ${TABLE}.start_station_id ;;
   }
   #
